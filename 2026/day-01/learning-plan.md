@@ -63,6 +63,6 @@ Press windows key on keyboard and open Bash | GitBash on MS Windows box and star
 # ls
 0
 
-# mkdir Day_01; touch learning-plan.md
-# cd Day_01; ls
+# mkdir day_01; touch learning-plan.md
+# cd day_01; ls
 learning-plan.md
