@@ -49,8 +49,8 @@ I plan to learn and practice the following tools one by one.
 ---
 
 ## Hands-On Practice
-- On Windows, open **Git Bash** to practice basic Linux commands.
-- If Git Bash is not installed, download it from:
+- On Windows, open **Bash** to practice basic Linux commands.
+- If Bash is not installed on the system, download it from:
   👉 [https://git-scm.com/install/windows](https://git-scm.com/install/windows)
 
 Press windows key on keyboard and open Bash | GitBash on MS Windows box and start hands-on it.
