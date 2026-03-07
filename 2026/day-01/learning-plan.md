@@ -1,7 +1,7 @@
 # Day 01 – DevOps & Cloud Learning Plan
 
 ## Introduction
-Hi, I am **Md Rustam Ansari**, a working professional. I have a plan to achieve the **90-day DevOps and Cloud learning plan**.
+Hi, I am **Md Rustam Ansari**, a working professional. I am committed to achieve the **90-day DevOps and Cloud learning plan** to enhance my technical skills and professional career.
 
 ---
 
