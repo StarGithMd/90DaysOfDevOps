@@ -19,3 +19,9 @@ These are common Git commands used in various situations
 - **git  branch**      >>> List, create, or delete branches
 - **git checkout**     >>> Switch branches or restore working tree files
 - **git switch**       >>> Switch branches
+
+- **git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPO.git**	>>> Add the upstream remote (only once)
+- **git remote -v**		>>> 	Verify remotes
+- **git fetch upstream**		>>> Fetch changes from upstream
+- **git checkout main, git merge upstream/main**		>>> Merge or rebase upstream changes into your local branch
+- **git rebase upstream/main**		>>> prefer a cleaner history
