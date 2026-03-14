@@ -5,10 +5,10 @@
 ## Today marks the beginning of your Git journey. Git is the backbone of modern DevOps every tool, pipeline, and workflow revolves around version control. Before diving into advanced concepts, you need to get comfortable with the basics by doing.
 
 ## Understand what Git is and why it matters
- - Version Control System (VCS): Git records changes to files over time, allowing you to revisit or restore earlier versions.
+ - A: Version Control System (VCS): Git records changes to files over time, allowing you to revisit or restore earlier versions.
  
 ## Set up your first Git repository from scratch
- - Download Git from git-scm.com and install it.
+ - A: Download Git from git-scm.com and install it.
  
 ## Task 1: Install and Configure Git
  - Verify Git is installed on your machine
@@ -62,7 +62,6 @@ drwxr-xr-x 5 root root 4096 Mar 14 03:19 ..
 hint: Using 'master' as the name for the initial branch. This default branch name
 hint: is subject to change. To configure the initial branch name to use in all
 hint: of your new repositories, which will suppress this warning, call:
-hint:
 hint:   git config --global init.defaultBranch <name>
 
 # ls -al
@@ -73,9 +72,7 @@ drwxr-xr-x 7 root root 4096 Mar 14 03:20 .git
 
 # git status
 On branch master
-
 No commits yet
-
 nothing to commit (create/copy files and use "git add" to track)
 
 # ls -al .git
@@ -142,7 +139,6 @@ nothing added to commit but untracked files present (use "git add" to track)
 # git status
 On branch master
 No commits yet
-
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
         new file:   git-commands.md
@@ -163,9 +159,7 @@ nothing to commit, working tree clean
 commit 8fddd8c1b63d45b5431180504349698775350bac (HEAD -> master)
 Author: Md Rustam <mdrstm669@gmail.com>
 Date:   Sat Mar 14 03:35:17 2026 +0000
-
     added 1st file
-
 diff --git a/git-commands.md b/git-commands.md
 new file mode 100644
 index 0000000..e69de29
@@ -206,7 +200,6 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
         modified:   git-commands.md
-
 no changes added to commit (use "git add" and/or "git commit -a")
 
 # git log --oneline
@@ -216,7 +209,6 @@ no changes added to commit (use "git add" and/or "git commit -a")
 commit 8fddd8c1b63d45b5431180504349698775350bac (HEAD -> master)
 Author: Md Rustam <mdrstm669@gmail.com>
 Date:   Sat Mar 14 03:35:17 2026 +0000
-
     added 1st file
 
 diff --git a/git-commands.md b/git-commands.md
@@ -241,13 +233,11 @@ nothing to commit, working tree clean
 commit 3d4b09d3d6e6f17259879a8cb78dae8c8a775fda (HEAD -> master)
 Author: Md Rustam <mdrstm669@gmail.com>
 Date:   Sat Mar 14 04:01:01 2026 +0000
-
     basic command added
 
 commit 8fddd8c1b63d45b5431180504349698775350bac
 Author: Md Rustam <mdrstm669@gmail.com>
 Date:   Sat Mar 14 03:35:17 2026 +0000
-
     added 1st file
 	
 # git log --oneline
@@ -258,7 +248,6 @@ Date:   Sat Mar 14 03:35:17 2026 +0000
 commit 3d4b09d3d6e6f17259879a8cb78dae8c8a775fda (HEAD -> master)
 Author: Md Rustam <mdrstm669@gmail.com>
 Date:   Sat Mar 14 04:01:01 2026 +0000
-
     basic command added
 
 diff --git a/git-commands.md b/git-commands.md
@@ -280,7 +269,6 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
         modified:   git-commands.md
-
 no changes added to commit (use "git add" and/or "git commit -a")
  
 # git add .;# git status
@@ -301,19 +289,16 @@ nothing to commit, working tree clean
 commit ac0f7ff974521847b8c1607fbf1babc465ce866d (HEAD -> master)
 Author: Md Rustam <mdrstm669@gmail.com>
 Date:   Sat Mar 14 04:13:57 2026 +0000
-
     added more commands
 
 commit 3d4b09d3d6e6f17259879a8cb78dae8c8a775fda
 Author: Md Rustam <mdrstm669@gmail.com>
 Date:   Sat Mar 14 04:01:01 2026 +0000
-
     basic command added
 
 commit 8fddd8c1b63d45b5431180504349698775350bac
 Author: Md Rustam <mdrstm669@gmail.com>
 Date:   Sat Mar 14 03:35:17 2026 +0000
-
     added 1st file
 
 # git log --oneline
@@ -325,7 +310,6 @@ ac0f7ff (HEAD -> master) added more commands
 commit ac0f7ff974521847b8c1607fbf1babc465ce866d (HEAD -> master)
 Author: Md Rustam <mdrstm669@gmail.com>
 Date:   Sat Mar 14 04:13:57 2026 +0000
-
     added more commands
 
 diff --git a/git-commands.md b/git-commands.md
@@ -345,7 +329,6 @@ index ea4bb39..0f13f3d 100644
 
 ## Task 6: Understand the Git Workflow
  - Answer these questions in your own words (add them to a day-22-notes.md file):
-
 	- What is the difference between git add and git commit?
 	- A: git add command sends the file status to staging area but not active for tracking, git commit command sends file status to tracking area or repository that keep the file under tracking.
 	
