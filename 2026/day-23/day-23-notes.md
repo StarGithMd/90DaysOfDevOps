@@ -245,3 +245,75 @@ remote: Resolving deltas: 100% (2/2), done.
 To github.com:StarGithMd/DebOps_Demo.git
  * [new branch]      main -> main
 
+# git push origin main
+Everything up-to-date
+
+# git branch -a
+  feature-1
+  feature-2
+* main
+  remotes/origin/main
+  
+# git branch -r
+  origin/main
+## attached "GitHub_repo" file is a print screen of uploaded local repo to remote repo 
+ 
+## What is the difference between origin and upstream?	
+ - A: In Git, “origin” usually refers to fork or personal copy of a repository, the “upstream” refers to the original repository you forked from. They are simply conventional names for remotes.
+ - origin: This is default remote pointing to your own fork or clone of a repository, it set automatically when run "git clone or git push origin main".
+ - upstream: This is remote pointing to the original source repository (often the one you forked from), it set manually when run "git remote add upstream and git fetch upstream".
+
+## Task 4: Pull from GitHub
+ - Make a change to a file directly on GitHub (use the GitHub editor)
+ - Pull that change to your local repo
+ - Answer in your notes: What is the difference between git fetch and git pull?
+ 
+## Created a new file "demo.txt" with some text on github repogitory under "DebOps_Demo.git"
+
+## Created new empty directory on my system as "demo" to fork "DebOps_Demo.git" github repository.
+# cd demo; ls -al
+-bash: cd: demo: No such file or directory
+total 8
+drwxr-xr-x 2 root root 4096 Mar 14 11:30 .
+drwxr-xr-x 5 root root 4096 Mar 14 03:19 ..
+
+## git clone https://github.com/StarGithMd/DebOps_Demo.git
+Cloning into 'DebOps_Demo'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 15 (delta 2), reused 12 (delta 2), pack-reused 0 (from 0)
+Receiving objects: 100% (15/15), done.
+Resolving deltas: 100% (2/2), done.
+
+# ls -l
+total 4
+drwxr-xr-x 3 root root 4096 Mar 14 11:34 DebOps_Demo
+# cd DebOps_Demo; ls -la
+total 8
+-rw-r--r-- 1 root root   21 Mar 14 11:34 demo.txt
+-rw-r--r-- 1 root root 2351 Mar 14 11:34 git-commands.md
+
+# cat demo.txt
+This is the new file
+
+## Task 5: Clone vs Fork
+ - Clone any public repository from GitHub to your local machine
+ - Fork the same repository on GitHub, then clone your fork
+ - Answer in your notes:
+ - What is the difference between clone and fork?
+ - When would you clone vs fork?
+ - After forking, how do you keep your fork in sync with the original repo?
+ 
+## There are following difference between git fetch and git pull. 
+ - git fetch: it help to Downloads commits, branches (git fetch origin, git log origin/main) and there is no make change in working files and remote-tracking.
+ - git pull: it help to upload working file to remote repo and can make change (git fetch, git merge, git rebase) in file and configuration and sync brance to remote.
+ 
+## When would you clone vs fork? 
+ - Fork : Forking is best when require to create independent copy of a GitHub repository. Fork → Clone → Make changes → Push to fork → Pull request to original
+ - Clone: Cloning is the best when required to work locally on code, test, and develop. Clone → Make changes → Push directly (if you have write access)
+ 
+## After forking, how do you keep your fork in sync with the original repo?
+ - To keep fork in sync with the original repository it need to add the upstream remote and regularly pull changes from it.
+ - git remote add upstream https://github.com/StarGithMd/DebOps_Demo.git
+ 
